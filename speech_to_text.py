@@ -10,5 +10,5 @@ with sr.Microphone() as source:
 	text = r.recognize_google(audio)
 	if text == 'open Chrome' or text == 'Google search' or text =='let me search on Google':
 		webbrowser.open('http://www.google.com/')
-	print('You said: {}'.format(text))
-	
+	else:
+		print('You said: {}'.format(text))
